@@ -12,19 +12,24 @@ package pl.edu.ur.polab4.obliczanieFigur;
 public class Kwadrat {
 
     public int dlugosc;
-
+    public int pole;
+    public int obwod;
     public Kwadrat(int dlugosc) {
         this.dlugosc = dlugosc;
-        System.out.println(this.dlugosc);
     }
 
-    int pole(int dlugosc) {
-        System.out.println("pole= " + dlugosc * dlugosc);
-        return this.dlugosc * this.dlugosc;
+    public int pole() {
+        pole=dlugosc*dlugosc;
+        return pole;
     }
 
-    int obwod(int dlugosc) {
-        return 4 * this.dlugosc;
+    public int obwod() {
+         obwod=4*dlugosc;
+         return obwod;
+    }
+    public void wyswietl()
+    {
+        System.out.println("Kwadrat o dlugosci "+dlugosc+" o polu:"+pole+" o obwod:" + obwod);
     }
 
 }
